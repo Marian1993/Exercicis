@@ -27,8 +27,8 @@ public class Main {
         System.out.print("Sex: ");
         persona2.setSex(sc.nextLine());
 
-        System.out.print("");
-        persona2.setPhone(667488326);
+        System.out.print("Phone: ");
+        persona2.setPhone(sc.nextInt());
 
         System.out.println();
         System.out.println(persona2.toString());
