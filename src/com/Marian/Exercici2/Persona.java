@@ -73,5 +73,9 @@ public class Persona {
                 ", phone=" + phone +
                 '}';
     }
+    public char convert(String string){
 
+        char letra;
+        return  letra = string.charAt(0);
+    }
 }
