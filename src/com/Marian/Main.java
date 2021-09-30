@@ -20,6 +20,7 @@ public class Main {
 
         System.out.print("Age: ");
         persona2.setAge(sc.nextInt());
+        sc.nextLine();
 
         System.out.print("DNI: ");
         persona2.setDni(sc.nextLine());
