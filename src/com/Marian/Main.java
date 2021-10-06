@@ -1,6 +1,9 @@
 package com.Marian;
 
-import com.Marian.Exercici2.Persona;
+import com.Marian.Exercici2Classes.Persona;
+import com.Marian.Exercici3Classes.Dog;
+import com.Marian.Exercici4Condicionals.Condicionals;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
@@ -8,30 +11,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Persona persona1 = new Persona("Maria",20,"23456755M",'D',677543124);
-
-        System.out.println(persona1.toString());
-
-        Persona persona2 = new Persona();
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Name: ");
-        persona2.setName(sc.nextLine());
-
-        System.out.print("Age: ");
-        persona2.setAge(sc.nextInt());
-        sc.nextLine();
-
-        System.out.print("DNI: ");
-        persona2.setDni(sc.nextLine());
-
-        System.out.print("Sex: ");
-        persona2.setSex(persona2.convert(sc.nextLine()));
-
-        System.out.print("Phone: ");
-        persona2.setPhone(sc.nextInt());
-
-        System.out.println();
-        System.out.println(persona2.toString());
+        //System.out.println(Condicionals.positiveOrNegative());
+        //System.out.println(Condicionals.multipleTwo());
+        //System.out.println(Condicionals.higherLessSame());
+        //System.out.println(Condicionals.dayOfWeekIf());
+        //System.out.println(Condicionals.dayOfWeekSwitch());
+        //System.out.println(Condicionals.dayMoment());
+        System.out.println(Condicionals.noteClass());
     }
+
 }

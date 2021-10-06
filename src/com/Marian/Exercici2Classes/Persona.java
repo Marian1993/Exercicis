@@ -1,4 +1,4 @@
-package com.Marian.Exercici2;
+package com.Marian.Exercici2Classes;
 
 public class Persona {
     private String name;
@@ -74,7 +74,6 @@ public class Persona {
                 '}';
     }
     public char convert(String string){
-
         char letra;
         return  letra = string.charAt(0);
     }
