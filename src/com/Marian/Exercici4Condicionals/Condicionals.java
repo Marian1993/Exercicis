@@ -1,5 +1,8 @@
 package com.Marian.Exercici4Condicionals;
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Condicionals {
@@ -136,5 +139,142 @@ public class Condicionals {
                 return "Error";
         }
     }
+    public static String correctDate(){
 
+        System.out.print("Put a day: ");
+        int day= sc.nextInt();
+        System.out.print("Put a mounth: ");
+        int mounth = sc.nextInt();
+        System.out.print("Put an age: ");
+        int age = sc.nextInt();
+
+        if(day <= 30 && mounth <= 12 && age <=2050){
+
+            if (day > 0 && mounth > 0 && age >= 1900){
+
+                return "Correct Date";
+            }
+        }
+            return "Incorrect Date";
+    }
+    public static String correctDate2(){
+
+        System.out.print("Put a day: ");
+        int day= sc.nextInt();
+        System.out.print("Put a mounth: ");
+        int mounth = sc.nextInt();
+        System.out.print("Put an age: ");
+        int age = sc.nextInt();
+
+        switch (mounth) {
+
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                if (day <= 31 && mounth <= 12 && age <= 2050) {
+
+                    if (day > 0 && mounth > 0 && age >= 1900) {
+
+                        return "Correct Date";
+                    }
+                }
+            case 2:
+                if (day <= 28 && mounth <= 12 && age <= 2050) {
+
+                    if (day > 0 && mounth > 0 && age >= 1900) {
+
+                        return "Correct Date";
+                    }
+                }
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                if (day <= 30 && mounth <= 12 && age <= 2050) {
+
+                    if (day > 0 && mounth > 0 && age >= 1900) {
+
+                        return "Correct Date";
+                    }
+                }
+            default:
+                return "Incorrect Date";
+        }
+    }
+    public static void orderNumber(){
+
+        System.out.print("Put first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Put second numbre: ");
+        int num2 = sc.nextInt();
+        System.out.print("Put three number: ");
+        int num3 = sc.nextInt();
+
+        int[] number = new int[3];
+
+        if(num1 > num2 && num1 > num3){
+            number[0] = num1;
+            if(num2 > num3){
+                number[1] = num2;
+                number[2] = num3;
+            }else{
+                number[1] = num3;
+                number[2] = num2;
+            }
+
+        }else if(num2 > num3 && num2 > num1){
+            number[0] = num2;
+            if (num1 > num3){
+                number[1] = num1;
+                number[2] = num3;
+            }else {
+                number[1] = num3;
+                number[2] = num1;
+            }
+        }else {
+            number[0] = num3;
+            if(num1 > num2){
+                number[1] = num1;
+                number[2] = num2;
+            }else {
+                number[1] = num2;
+                number[2] = num1;
+            }
+        }
+        for (int num:number
+             ) {
+            System.out.println(num);
+        }
+    }
+    public static String adultOrYounger(){
+
+        System.out.print("Put an age: ");
+        int age = sc.nextInt();
+
+        if ( age < 0 )
+            return "Error";
+
+        if ( age > 18 )
+            return "Adult";
+
+        return "Young";
+    }
+    /*public static String quantityBills(){
+
+        System.out.println("Put a quantity bills: ");
+        int bills = sc.nextInt();
+        int fifty;
+        int forty;
+        int thirty;
+        int twenty;
+        int ten;
+        int two;
+        int one;
+
+
+    }*/
 }

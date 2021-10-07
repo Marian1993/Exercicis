@@ -17,7 +17,11 @@ public class Main {
         //System.out.println(Condicionals.dayOfWeekIf());
         //System.out.println(Condicionals.dayOfWeekSwitch());
         //System.out.println(Condicionals.dayMoment());
-        System.out.println(Condicionals.noteClass());
+        //System.out.println(Condicionals.noteClass());
+        //System.out.println(Condicionals.correctDate());
+        //System.out.println(Condicionals.correctDate2());
+        //Condicionals.orderNumber();
+        System.out.println(Condicionals.adultOrYounger());
     }
 
 }
