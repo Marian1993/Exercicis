@@ -263,18 +263,37 @@ public class Condicionals {
 
         return "Young";
     }
-    /*public static String quantityBills(){
+    public static String quantityBills(){
 
-        System.out.println("Put a quantity bills: ");
-        int bills = sc.nextInt();
-        int fifty;
-        int forty;
-        int thirty;
-        int twenty;
-        int ten;
-        int two;
-        int one;
+        System.out.print("Put a quantity money: ");
 
+        int bills = sc.nextInt();;
+        int fifty = 0;
+        int twenty = 0;
+        int ten = 0;
+        int five = 0;
+        int two = 0;
+        int one = 0;
 
-    }*/
+        fifty = bills/50;
+        bills -= (fifty*50);
+
+        twenty = bills/20;
+        bills-= (twenty*20);
+
+        ten = bills/10;
+        bills -= (ten*10);
+
+        five = bills/5;
+        bills -= (five*5);
+
+        two = bills/2;
+        bills -= (two*2);
+
+        one = bills/1;
+        bills -= (one*1);
+
+        return "bills 50 = " + fifty + "\nbills 20 = " + twenty + "\nbills 10 = " + ten +
+                "\nbills 5 = " + five + "\ncoins 2 = " + two + "\ncoins 1 = " + one;
+    }
 }
