@@ -22,7 +22,12 @@ public class Main {
         //Bucles.matchHiddenNumber();
         //Bucles.putXNumers();
         //Bucles.showBetterNumber();
-        Bucles.rating();
+        //Bucles.rating();
+        //System.out.println(Bucles.investWord());
+        //System.out.println(Bucles.wordPalindrom());
+        //System.out.println(Bucles.numberWords());
+        //System.out.println(Bucles.numberA());
+        //Bucles.numberVowels();
 
     }
 

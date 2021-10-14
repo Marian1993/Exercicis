@@ -1,5 +1,6 @@
 package com.Marian.Exercici5Bucles;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Bucles {
@@ -182,6 +183,85 @@ public class Bucles {
             }
         }
         System.out.print("Approved= " + approved + "\nSuspended= " + suspended + "\nError= " + error);
+    }
+    public static String investWord(){
+
+        System.out.print("Put a word: ");
+        String word = sc.nextLine();
+        String aux = "";
+
+        for (int i = word.length()-1; i >= 0; i--) {
+
+            aux += word.charAt(i);
+        }
+        return aux;
+    }
+    public static boolean wordPalindrom(){
+
+        System.out.print("Put a word: ");
+        String word = sc.nextLine();
+        String aux = "";
+
+        for (int i = word.length()-1; i >= 0; i--) {
+
+            aux += word.charAt(i);
+        }
+        if (word.equals(aux)){
+
+            return true;
+        }
+        return false;
+    }
+    public static int numberWords(){
+
+        System.out.print("Put a words: ");
+        String word = sc.nextLine();
+        int count = 1;
+
+        for (int i = 0; i < word.length(); i++) {
+
+            if(word.charAt(i) == ' ') {
+                count++;
+            }
+        }
+        return count;
+    }
+    public static int numberA(){
+
+        System.out.print("Put a words: ");
+        String word = sc.nextLine();
+        int count = 0;
+
+        for (int i = 0; i < word.length(); i++) {
+
+            if(word.toLowerCase().charAt(i) == 'a') {
+                count++;
+            }
+        }
+        return count;
+    }
+    public static void numberVowels(){
+
+        System.out.print("Put a words: ");
+        String word = sc.nextLine();
+        char[] character = {'a','e','i','o','u'};
+        int[] count = new int[character.length];
+
+        for (int i = 0; i < word.length(); i++) {
+
+            for (int j = 0; j < character.length; j++) {
+
+                if(word.toLowerCase().charAt(i) == character[j]){
+                    count[j]++;
+                }
+            }
+        }
+        for (int i = 0; i < character.length; i++) {
+
+            if(count[i] > 0) {
+                System.out.println(character[i] + "= " + count[i]);
+            }
+        }
     }
 
 }
