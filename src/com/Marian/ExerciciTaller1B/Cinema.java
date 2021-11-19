@@ -43,7 +43,7 @@ public class Cinema {
     public Pelicula longerFilm(){
 
         int lenght = 0;
-        Pelicula pelicula = new Pelicula();
+        Pelicula pelicula=null;// = new Pelicula();
 
         for (int i = 0; i < this.films.size(); i++) {
 

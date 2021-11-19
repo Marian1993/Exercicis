@@ -6,6 +6,8 @@ import com.Marian.Exercici4Condicionals.Condicionals;
 import com.Marian.Exercici5Bucles.Bucles;
 import com.Marian.Exercici6Arrays.Arrays;
 import com.Marian.Exercici6Arrays.ClassePila.Pila;
+import com.Marian.Ordenacio.Sorts;
+import com.Marian.ReforçArrays.NouArray;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
@@ -14,6 +16,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        NouArray.proba();
 
 
     }
