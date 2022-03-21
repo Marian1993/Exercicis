@@ -4,7 +4,7 @@ public class Sorts {
 
     public static void selectionSort(){
 
-        int[] selection = {5,1,12,-5,16,2,12,14};
+        int[] selection = {5,1,-5,16,2,14};
 
         for (int i = 0; i < selection.length; i++) {
 
